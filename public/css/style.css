@@ -1,0 +1,12 @@
+.logo {
+    position: relative;
+}
+
+.nav_bar {
+    float: right;
+
+}
+.nav_bar , a
+{
+    text-decoration:none;
+}
