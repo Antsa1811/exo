@@ -14,6 +14,16 @@
 </div>
 
 <div class="block">
+    <div class="notification subtitle is-primary">Calcule pour la multiplication</div>  
+    <?php echo "Le total de la multiplication est " . $numerique->multiplication(5,5); ?> 
+</div>
+
+<div class="block">
+    <div class="notification subtitle is-error">Calcule pour la division</div>  
+    <?php echo "Le total de la division est " . $numerique->Division(8,4) ?>
+</div>
+
+<div class="block">
     <div class="notification subtitle">Calcule de delta</div>
     <?php 
     $arrayobject=$numerique->Delta(1,4,2); 

@@ -1,8 +1,9 @@
 <?php
+/**
+ * CLASS POUR LA CALCULE 
+ */
 
-
-
-class Numerique{
+ class Numerique{
 
     private $a;
     private $b;
@@ -28,6 +29,19 @@ class Numerique{
          $this->total= $this->a=$a- $this->b=$b;
 
         return  $this->total;
+    }
+
+
+    public function Multiplication($a,$b){
+        $this->total=$this->a=$a*$this->b=$b;
+
+        return $this->total;
+    }
+
+    public function Division($a,$b){
+        $this->total=$this->a=$a/$this->b=$b;
+
+        return $this->total;
     }
 
     public  function Delta($a,$b,$c){
