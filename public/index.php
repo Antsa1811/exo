@@ -18,6 +18,9 @@ if($p === 'aceuil'){
 elseif ($p === 'numerique') {
    require '../pages/numerique.php';
 }
+elseif ($p === 'affiche') {
+    require '../pages/affiche.php';
+ }
 elseif ($p === 'delta') {
     require '../pages/delta.php';
  }

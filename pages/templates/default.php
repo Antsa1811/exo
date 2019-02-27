@@ -13,7 +13,7 @@
 <div class="notification is-primary logo "> Site de calcule
 <div class="nav_bar">
 <a href="index.php?p=numerique">Calcule</a>
-<a href="index.php?p=delta">Delta</a>
+<a href="index.php?p=affiche">Affichage</a>
 </div>
 
  </div>
