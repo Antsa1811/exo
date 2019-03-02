@@ -2,6 +2,7 @@
 /**
  * CLASS POUR LA CALCULE 
  */
+namespace App;
 
  class Numerique{
 

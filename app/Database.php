@@ -2,7 +2,9 @@
 /**
  * CLASS POUR LA CONNEXION A LA BASE DE DONNER
  */
+namespace App;
 
+use PDO;
 
 class Database{
 
@@ -31,9 +33,9 @@ class Database{
         return $pdo;
     }
 
-    public function query($sql){
+    public function query($sql,$class_name){
         $req=$this->getPdo()->query($sql);
-         $data=$req->fetchAll(PDO::FETCH_OBJ);
+         $data=$req->fetchAll(PDO::FETCH_CLASS,$class_name);
          return $data;
     }
 }

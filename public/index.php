@@ -1,12 +1,13 @@
 <?php
 
+
 require '../App/Autoloader.php';
 
 App\Autoloader::register();
 
 $p=isset($_GET['p']) ? $_GET['p']:"aceuil";
 
-
+$data=new App\Database('calcule');
 
 
 ob_start();
@@ -21,6 +22,9 @@ elseif ($p === 'numerique') {
 elseif ($p === 'affiche') {
     require '../pages/affiche.php';
  }
+elseif ($p === 'single') {
+    require '../pages/single.php';
+}
 elseif ($p === 'delta') {
     require '../pages/delta.php';
  }

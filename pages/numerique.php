@@ -4,7 +4,7 @@
 <div class="block">
     <div class="notification subtitle is-success ">Calcule pour l'addition</div>
     <?php
-        $numerique= new numerique();
+        $numerique= new App\numerique();
         echo "Le total du chiffre est " . $numerique->Addition(5,6);?>
 </div>
 
