@@ -35,6 +35,12 @@ class App{
 
     }
 
+    public static function getTable($name){
+
+        $class_name ="App\\Table\\Table". ucfirst($name);
+        return new $class_name();
+    }
+
 
 
 }

@@ -7,8 +7,8 @@ App\Autoloader::register();
 
 $p=isset($_GET['p']) ? $_GET['p']:"aceuil";
 
-
-
+$post= App\App::getTable('categories');
+var_dump($post);
 
 ob_start();
 
