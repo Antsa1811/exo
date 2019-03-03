@@ -1,8 +1,12 @@
 <?php
 namespace App\table;
 
-
+use App\app;
 class Article{
+
+    public static function getLast(){
+       return App::getDb()->query("select * from chiffre",__CLASS__);
+    }
 
     public function __get($key){
         $method= 'get' . ucfirst($key);

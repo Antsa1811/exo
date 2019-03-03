@@ -10,7 +10,7 @@
     </tr>
     </thead>
     <tbody>
-    <?php foreach ($data->query("select * from chiffre",'App\Table\Article') as $post): ?>
+    <?php foreach (\App\table\Article::getLast() as $post): ?>
     <tr>
 
         <td><a href="<?= $post->url; ?>"><?= $post->Titre;?></a></td>

@@ -1,6 +1,6 @@
 <h1 class="title">Bienvenue sur le site pour afficher le single </h1>
 
-<?php $post=$data->prepare("SELECT * FROM chiffre WHERE id=?",[$_GET['id']],'App\table\Article',true);
+<?php $post=App\App::getDb()->prepare("SELECT * FROM chiffre WHERE id=?",[$_GET['id']],'App\table\Article',true);
 
 ?>
 

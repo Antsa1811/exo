@@ -7,7 +7,7 @@ App\Autoloader::register();
 
 $p=isset($_GET['p']) ? $_GET['p']:"aceuil";
 
-$data=new App\Database('calcule');
+
 
 
 ob_start();
@@ -29,7 +29,7 @@ elseif ($p === 'delta') {
     require '../pages/delta.php';
  }
 else{
-    require '../pages/erro404.php';
+    require '../pages/error404.php';
 }
 
  
