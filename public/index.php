@@ -22,7 +22,7 @@ elseif ($p === 'numerique') {
 elseif ($p === 'affiche') {
     require '../pages/affiche.php';
  }
-elseif ($p === 'single') {
+elseif ($p === 'article') {
     require '../pages/single.php';
 }
 elseif ($p === 'delta') {

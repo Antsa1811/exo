@@ -38,4 +38,20 @@ class Database{
          $data=$req->fetchAll(PDO::FETCH_CLASS,$class_name);
          return $data;
     }
+
+    public function prepare($statment,$attribut,$class_name,$one=false){
+
+        $req=$this->getPdo()->prepare($statment);
+        $req->execute($attribut);
+        $req->setFetchMode(PDO::FETCH_CLASS,$class_name);
+        if($one)
+        {
+            $datas=$req->fetch();
+        }else{
+            $datas=$req->fetchAll();
+        }
+
+        return $datas;
+
+    }
 }

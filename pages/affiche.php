@@ -7,16 +7,15 @@
     <tr>
         <td>Titre</td>
         <td>Commentaire</td>
-        <td>Afficher plus</td>
     </tr>
     </thead>
     <tbody>
     <?php foreach ($data->query("select * from chiffre",'App\Table\Article') as $post): ?>
     <tr>
 
-        <td><a href="<?php $post->url; ?>"><?= $post->Titre;?></a></td>
+        <td><a href="<?= $post->url; ?>"><?= $post->Titre;?></a></td>
             <td><?= $post->Commentaire;?></td>
-            <td><a href="<?php $post->url; ?>">Plus de detail</a></td>
+
     </tr>
     <?php  endforeach ?>
     </tbody>
