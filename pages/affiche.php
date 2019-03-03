@@ -1,7 +1,5 @@
 <h1 class="title center">Bienvenue sur la page de l'affichage</h1>
 
-
-
 <table class="table is-bordered is-striped is-narrow is-fullwidth is-hoverable">
     <thead>
     <tr>
